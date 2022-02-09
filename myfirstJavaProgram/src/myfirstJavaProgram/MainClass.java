@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 public class MainClass {
 	public static void main(String[] args) throws FileNotFoundException {
-	Scanner sc = new Scanner(new File("anime.txt"));
+	Scanner sc = new Scanner(new File("anime.txt")); 
 	
-	List<String> anime_array = new ArrayList<String>();
+	List<String> anime_array = new ArrayList<String>(); //Create an Array Object
 	
-		while (sc.hasNextLine()) {
+		while (sc.hasNextLine()) { //
 			anime_array.add(sc.nextLine());
 		}
 			for (int i = 0; i < anime_array.size(); i++) {
