@@ -46,7 +46,7 @@ public class Main {
 				printName(); // <-- Calling method 
 				backMenu = true;
 					continue;
-				} else if (userInputNum == 2) { // if user select not on option
+				} else if (userInputNum == 2) {
 					System.out.println("\nYou selected \"Add 2 Number\"");
 					addTwo(); // <-- Calling method
 					backMenu = true;
