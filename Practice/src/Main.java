@@ -12,6 +12,7 @@ public class Main {
 		String lastName = scannername.nextLine();
 		
 		System.out.println("\nRESULT: Hello there " + firstName + " " + lastName + "!\n\n");
+		
 	}
 	
 	public static void addTwo() {
@@ -35,22 +36,34 @@ public class Main {
 		do {
 		System.out.println("Please select option below: ");
 		System.out.println("1: Print a FullName");
-		System.out.println("2: Add 2 Number");
+		System.out.println("2: Add Two Number");
 		System.out.println("3: Guessing Game(easy)"); //not added
 		System.out.println("4: To Quit");
 		System.out.print("Please enter your number: ");
 		int userInputNum = scannermain.nextInt();
 		
 			if (userInputNum == 1) {
-				System.out.println("\nYou selected \"Print a FullName\"");
-				printName(); // <-- Calling method 
-				backMenu = true;
-					continue;
+					System.out.println("\nYou selected \"Print a FullName\"");
+					printName(); // <-- Calling method
+						System.out.print("Back to menu? (0:Yes|1:No) :");
+							int user_select = scannermain.nextInt();
+							if (user_select == 0) {
+							backMenu = true;
+				} else {
+					System.out.println("Thank you for using my App :)");
+					break;
+				}
 				} else if (userInputNum == 2) {
-					System.out.println("\nYou selected \"Add 2 Number\"");
+					System.out.println("\nYou selected \"Add Two Number\"");
 					addTwo(); // <-- Calling method
-					backMenu = true;
-					continue;
+						System.out.print("Back to menu? (0:Yes|1:No): ");
+							int user_select = scannermain.nextInt();
+							if (user_select == 0) {
+								backMenu = true;
+				} else {
+					System.out.println("Thank you for using my App :)");
+					break;
+				}
 				}
 				else if (userInputNum > 4 || userInputNum < 1) { // if user select not on option
 					System.out.println("\n######Invalid Input######\n");
@@ -62,6 +75,7 @@ public class Main {
 		
 		} while (backMenu = true);
 		scannermain.close();
+		
 		
 	} 
 		
