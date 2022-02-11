@@ -45,23 +45,22 @@ public class Main {
 				System.out.println("\nYou selected \"Print a FullName\"");
 				printName(); // <-- Calling method 
 				backMenu = true;
-				continue;
-			} else if (userInputNum == 2) { // if user select not on option
-				System.out.println("\nYou selected \"Add 2 Number\"");
-				addTwo(); // <-- Calling method
-				backMenu = true;
-				continue;
-			}
-			else if (userInputNum > 4 || userInputNum < 1) { // if user select not on option
-				System.out.println("\n######Invalid Input######\n");
-				backMenu = true;
-			} else if (userInputNum == 4) { // if user want to quit
-				System.out.println("-->Kunware nag exit yung app<--");
-				break;
-			}
+					continue;
+				} else if (userInputNum == 2) { // if user select not on option
+					System.out.println("\nYou selected \"Add 2 Number\"");
+					addTwo(); // <-- Calling method
+					backMenu = true;
+					continue;
+				}
+				else if (userInputNum > 4 || userInputNum < 1) { // if user select not on option
+					System.out.println("\n######Invalid Input######\n");
+					backMenu = true;
+				} else if (userInputNum == 4) { // if user want to quit
+					System.out.println("-->Kunware nag exit yung app<--");
+					break;
+				}
 		
 		} while (backMenu = true);
-		
 		scannermain.close();
 		
 	} 
